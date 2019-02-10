@@ -47,7 +47,7 @@ public class FizzBuzzSolutionTest {
 	}
 	@Test
 	public void testHasTwoFizzNumberInIt(){
-		 assertThat(solution.fizzBuzz(33), equalTo("fizz"));	
+		 assertThat(solution.fizzBuzz(363), equalTo("fizz"));	
 	}
 	@Test
 	public void testHasBuzzNumberInIt(){
@@ -76,6 +76,7 @@ public class FizzBuzzSolutionTest {
 		 assertThat(solution.fizzBuzz(111), equalTo("fizz buzz deluxe"));		
 	}
 }
+
 
 
 
