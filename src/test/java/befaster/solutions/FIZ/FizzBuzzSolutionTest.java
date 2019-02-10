@@ -65,7 +65,7 @@ public class FizzBuzzSolutionTest {
 	
 	@Test
 	public void testAllDigitsTheSameOverTenEven(){
-		 assertThat(solution.fizzBuzz(22), equalTo("fake deluxe"));
+		 assertThat(solution.fizzBuzz(22), equalTo("deluxe"));
 	}
 	@Test
 	public void testDeluxe(){
@@ -89,5 +89,6 @@ public class FizzBuzzSolutionTest {
 		 assertThat(solution.fizzBuzz(11), equalTo("fake deluxe"));	
 	}
 }
+
 
 
