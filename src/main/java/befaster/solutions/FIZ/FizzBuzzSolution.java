@@ -42,6 +42,7 @@ public class FizzBuzzSolution {
     	
     	//lets create the string based on the booleans
     	String finalValue = "";
+    	
     	if(isFizz){
     		finalValue = "fizz";
     		if(isBuzz || isDeluxe) { //append the space
@@ -58,13 +59,14 @@ public class FizzBuzzSolution {
     		finalValue += "deluxe";
     	}
     
-    	if(finalValue != intialValue){
+    	if(finalValue.length() > 0){
     		return finalValue;
     	}
     	return intialValue;
     }
 
 }
+
 
 
 
