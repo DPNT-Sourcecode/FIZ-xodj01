@@ -41,8 +41,7 @@ public class FizzBuzzSolution {
     	}else if(number % 5==0){
     		value= "buzz";
     		isBuzz = true;
-    	}
-    	  	
+    	} 	
     	if(isFizz && isBuzz && !isDeluxe){
     		value= "fizz buzz";
     	}
@@ -56,6 +55,7 @@ public class FizzBuzzSolution {
     }
 
 }
+
 
 
 

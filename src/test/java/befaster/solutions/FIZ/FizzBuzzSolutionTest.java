@@ -55,7 +55,7 @@ public class FizzBuzzSolutionTest {
 	}
 	@Test
 	public void testHasTwoBuzzNumberInIt(){
-		 assertThat(solution.fizzBuzz(55), equalTo("buzz"));	
+		 assertThat(solution.fizzBuzz(505), equalTo("buzz"));	
 	}
 	
 	@Test
@@ -73,9 +73,11 @@ public class FizzBuzzSolutionTest {
 	}
 	@Test
 	public void testFizzBuzzDeluxe(){
-		 assertThat(solution.fizzBuzz(111), equalTo("fizz buzz deluxe"));		
+		//what is divisible by 3,5, all the same number and greater than 10..
+		 assertThat(solution.fizzBuzz(15), equalTo("fizz buzz deluxe"));		
 	}
 }
+
 
 
 
