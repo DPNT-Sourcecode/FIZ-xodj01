@@ -1,11 +1,18 @@
 package befaster.solutions.SUM;
 
-import befaster.runner.SolutionNotImplementedException;
 
 public class SumSolution {
 
     public int compute(int x, int y) {
-        throw new SolutionNotImplementedException();
+
+    	//we can assume becauesof the parmams in we'll get ints.. not not strings, or handle above
+        //expected a number between 0 and 100
+    	//implement as an exception if not between the values or do this where the arguments come in..
+           
+    	
+        //if we get here we've done well
+        return x + y;
     }
 
 }
+
