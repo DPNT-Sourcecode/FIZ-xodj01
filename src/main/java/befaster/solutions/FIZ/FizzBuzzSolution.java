@@ -9,6 +9,7 @@ public class FizzBuzzSolution {
     	String value = ""+ number;//return this no conditions meet
     	String intialValue = value;
     	
+    	
     	boolean isDeluxe = true;
     	boolean isFizz  = false;
     	boolean isBuzz = false;
@@ -29,39 +30,37 @@ public class FizzBuzzSolution {
     		isDeluxe= false;
     	}
     	
-    	if(intialValue.contains("3")){
-    		value = "fizz";
+    	if(intialValue.contains("3")){	
     		isFizz = true;
     	}else if(number % 3 == 0){
-    		value = "fizz";
     		isFizz = true;
     	}
     	if(intialValue.contains("5")){
-    		value = "buzz";
     		isBuzz = true;
     	}else if(number % 5==0){
-    		value= "buzz";
     		isBuzz = true;
     	} 	
-    	if(isFizz && isBuzz && !isDeluxe){
-    		value= "fizz buzz";
-    	}
-    	if(isFizz && isBuzz && isDeluxe){
-    		value = "fizz buzz deluxe";
-    	}
-    	else if(isFizz && !isBuzz && isDeluxe){
-    		value="fizz deluxe";
-    	}
-    	else if(!isFizz && isBuzz && isDeluxe){
-    		value="buzz deluxe";
-    	}
-    	else if(isDeluxe){
-    		value="deluxe";
-    	}
     	
-    	return value;
+    	if(isFizz){
+    		value = "fizz";
+    	}
+    	if(isBuzz){
+    		if(isFizz) 
+    			value+=" ";    				
+     		value+="buzz";
+     	}
+    	 if(isDeluxe){
+     		if(isFizz || isBuzz) 
+    			value+=" ";
+    		value+="deluxe";
+    	}
+    	if(value!=""){
+    		return value;
+    	}
+    	return intialValue;
     }
 
 }
+
 
 
