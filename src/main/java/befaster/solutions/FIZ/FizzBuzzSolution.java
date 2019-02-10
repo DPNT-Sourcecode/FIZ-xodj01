@@ -9,7 +9,7 @@ public class FizzBuzzSolution {
     	String value = ""+ number;//return this no conditions meet
     	String intialValue = value;
     	  	
-    	boolean isDeluxe = true;
+    	boolean isDeluxe = false;
     	boolean isFizz  = false;
     	boolean isBuzz = false;
     	
@@ -80,6 +80,7 @@ public class FizzBuzzSolution {
     }
 
 }
+
 
 
 

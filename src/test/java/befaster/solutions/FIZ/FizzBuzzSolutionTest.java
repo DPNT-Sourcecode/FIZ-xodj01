@@ -17,16 +17,15 @@ public class FizzBuzzSolutionTest {
 	
 	@Test
 	public void testFizz(){
-	 assertThat(solution.fizzBuzz(3), equalTo("fizz deluxe"));
+	 assertThat(solution.fizzBuzz(3), equalTo("fizz fake deluxe"));
 	}
 	@Test
 	public void testFizzMultiple(){
-	 //could potentially do this with an input file of multiple values divisible..
 	 assertThat(solution.fizzBuzz(9), equalTo("fizz"));
 	}
 	@Test
 	public void testBuzz(){
-		 assertThat(solution.fizzBuzz(5), equalTo("buzz deluxe"));
+		 assertThat(solution.fizzBuzz(5), equalTo("buzz fake deluxe"));
 	}
 
 	@Test
@@ -43,11 +42,11 @@ public class FizzBuzzSolutionTest {
 	}
 	@Test
 	public void testHasFizzNumberInIt(){
-		 assertThat(solution.fizzBuzz(23), equalTo("fizz deluxe"));	
+		 assertThat(solution.fizzBuzz(23), equalTo("fizz fake deluxe"));	
 	}
 	@Test
 	public void testHasTwoFizzNumberInIt(){
-		 assertThat(solution.fizzBuzz(363), equalTo("fizz deluxe"));	
+		 assertThat(solution.fizzBuzz(363), equalTo("fizz fake deluxe"));	
 	}
 	@Test
 	public void testHasBuzzDeluxe(){
@@ -89,6 +88,7 @@ public class FizzBuzzSolutionTest {
 		 assertThat(solution.fizzBuzz(11), equalTo("fake deluxe"));	
 	}
 }
+
 
 
 
