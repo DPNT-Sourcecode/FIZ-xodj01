@@ -25,5 +25,3 @@ public class SumSolutionTest {
     	sum.compute(-1, 0);
     }
 }
-
-

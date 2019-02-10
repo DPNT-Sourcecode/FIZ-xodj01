@@ -47,4 +47,3 @@ public class EntryPointMapping {
         return checkoutSolution.checkout(p[0]);
     }
 }
-
