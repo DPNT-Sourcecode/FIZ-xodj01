@@ -34,7 +34,7 @@ public class FizzBuzzSolutionTest {
 	}	
 	@Test
 	public void testFizzBuzz(){
-		 assertThat(solution.fizzBuzz(15), equalTo("fizz buzz"));
+		 assertThat(solution.fizzBuzz(15), equalTo("fizz buzz fake deluxe"));
 	}
 	@Test
 	public void testNoFizzNoBuzz(){
@@ -42,7 +42,7 @@ public class FizzBuzzSolutionTest {
 	}
 	@Test
 	public void testHasFizzNumberInIt(){
-		 assertThat(solution.fizzBuzz(23), equalTo("fizz fake deluxe"));	
+		 assertThat(solution.fizzBuzz(23), equalTo("fizz"));	
 	}
 	@Test
 	public void testHasTwoFizzNumberInIt(){
@@ -50,11 +50,11 @@ public class FizzBuzzSolutionTest {
 	}
 	@Test
 	public void testHasBuzzDeluxe(){
-		 assertThat(solution.fizzBuzz(52), equalTo("buzz deluxe"));	
+		 assertThat(solution.fizzBuzz(52), equalTo("buzz"));	
 	}
 	@Test
 	public void testHasTwoBuzzNumberInIt(){
-		 assertThat(solution.fizzBuzz(505), equalTo("buzz deluxe"));	
+		 assertThat(solution.fizzBuzz(505), equalTo("buzz fake deluxe"));	
 	}
 	
 	@Test
@@ -64,19 +64,19 @@ public class FizzBuzzSolutionTest {
 	
 	@Test
 	public void testAllDigitsTheSameOverTenEven(){
-		 assertThat(solution.fizzBuzz(22), equalTo("deluxe"));
+		 assertThat(solution.fizzBuzz(22), equalTo("22"));
 	}
 	@Test
 	public void testDeluxe(){
-		 assertThat(solution.fizzBuzz(11), equalTo("fake deluxe"));		
+		 assertThat(solution.fizzBuzz(33), equalTo("fizz fake deluxe"));		
 	}
 	@Test
 	public void testFizzDeluxeTwo(){
-		 assertThat(solution.fizzBuzz(222), equalTo("fizz deluxe"));		
+		 assertThat(solution.fizzBuzz(222), equalTo("fizz"));		
 	}
 	@Test
 	public void testDeluxeSeven(){
-		 assertThat(solution.fizzBuzz(777), equalTo("fizz fake deluxe"));		
+		 assertThat(solution.fizzBuzz(777), equalTo("fizz"));		
 	}
 
 	@Test
@@ -88,8 +88,3 @@ public class FizzBuzzSolutionTest {
 		 assertThat(solution.fizzBuzz(11), equalTo("fake deluxe"));	
 	}
 }
-
-
-
-
-
