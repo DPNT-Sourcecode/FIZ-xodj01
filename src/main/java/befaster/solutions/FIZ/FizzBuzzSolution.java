@@ -43,27 +43,29 @@ public class FizzBuzzSolution {
     	String finalValue = "";
 
     	if(isFizz){
-    		value = "fizz";
-    	}
-    	if(isFizz && isBuzz) {
-    			value=" buzz";   
-    	}else if(isBuzz){
-    			value="buzz";
-    		}
-     	}
+    		finalValue = "fizz";
+    		if(isBuzz || isDeluxe) {
+        		finalValue+=" ";   
+        	}
+    	}    	
+    	if(isBuzz){
+    		finalValue += "buzz";
+    		if(isDeluxe) {
+        		finalValue+=" ";   
+        	}
+    	}      	
     	if(isDeluxe){
-     		if(isFizz || isBuzz) {
-    			value+=" ";
-     		}
     		value+="deluxe";
     	}
-    	if(value != initialValue){
-    		return value;
+    	
+    	if(finalValue != intialValue){
+    		return finalValue;
     	}
     	return intialValue;
     }
 
 }
+
 
 
 
