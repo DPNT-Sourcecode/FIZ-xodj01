@@ -62,5 +62,11 @@ public class FizzBuzzSolutionTest {
 	public void testHasFizzAndHasBuzzInSame(){
 		 assertThat(solution.fizzBuzz(563), equalTo("fizz buzz"));		
 	}
+	
+	public void testAllDigitsTheSameOverTen(){
+		 assertThat(solution.fizzBuzz(222), equalTo("deluxe"));		
+		
+	}
 }
+
 
