@@ -13,7 +13,8 @@ public class FizzBuzzSolution {
     	boolean isFizz  = false;
     	boolean isBuzz = false;
     	
-    	char[] split = value.toCharArray();
+    	/*remove once happy with code
+    	 * char[] split = value.toCharArray();
     	if(split.length >0 && number > 10){
     		char previous = 'a';//it will never be an a
         	for(int i=0; i <split.length; i++){
@@ -27,7 +28,14 @@ public class FizzBuzzSolution {
         	}
     	}else{
     		isDeluxe= false;
-     	}
+     	}*/
+    	
+    	if(intialValue.contains("3")&& number % 3==0){
+    		isDeluxe =true;
+    	}
+    	if(intialValue.contains("5")&& number % 5==0){
+    		isDeluxe =true;
+    	}
     	
     	if(intialValue.contains("3")){	
     		isFizz = true;
@@ -72,5 +80,6 @@ public class FizzBuzzSolution {
     }
 
 }
+
 
 
