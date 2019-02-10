@@ -90,7 +90,3 @@ public class FizzBuzzSolutionTest {
 		 assertThat(solution.fizzBuzz(555), equalTo("fizz buzz deluxe"));		
 	}
 }
-
-
-
-
