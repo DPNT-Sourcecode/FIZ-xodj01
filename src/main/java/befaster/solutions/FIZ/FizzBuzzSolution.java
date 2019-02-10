@@ -30,7 +30,7 @@ public class FizzBuzzSolution {
     		isDeluxe= false;
      	}*/
     	
-    	if(intialValue.contains("3")&& number % 3==0){
+    	if(intialValue.contains("3") && number % 3==0){
     		isDeluxe =true;
     	}
     	if(intialValue.contains("5")&& number % 5==0){
@@ -80,6 +80,7 @@ public class FizzBuzzSolution {
     }
 
 }
+
 
 
 
