@@ -7,20 +7,21 @@ public class FizzBuzzSolution {
     public String fizzBuzz(Integer number) {
 
     	String value = ""+ number;//return this no conditions meet
+    	String intialValue = value;
     	boolean isFizz  = false;
     	boolean isBuzz = false;
     	
     	
-    	if(value.contains("3")){
+    	if(intialValue.contains("3")){
     		value = "fizz";
     		isFizz = true;
     	}else if(number % 3 == 0){
     		value = "fizz";
     		isFizz = true;
     	}
-    	if(value.contains("5")){
+    	if(intialValue.contains("5")){
     		value = "buzz";
-    		isFizz = true;
+    		isBuzz = true;
     	}else if(number % 5==0){
     		value= "buzz";
     		isBuzz = true;
@@ -34,3 +35,4 @@ public class FizzBuzzSolution {
     }
 
 }
+
