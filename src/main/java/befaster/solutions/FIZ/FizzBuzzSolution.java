@@ -48,7 +48,14 @@ public class FizzBuzzSolution {
     	}
     	if(isFizz && isBuzz && isDeluxe){
     		value = "fizz buzz deluxe";
-    	}else if(isDeluxe){
+    	}
+    	else if(isFizz && !isBuzz && isDeluxe){
+    		value="fizz deluxe";
+    	}
+    	else if(!isFizz && isBuzz && isDeluxe){
+    		value="buzz deluxe";
+    	}
+    	else if(isDeluxe){
     		value="deluxe";
     	}
     	
@@ -56,4 +63,5 @@ public class FizzBuzzSolution {
     }
 
 }
+
 
