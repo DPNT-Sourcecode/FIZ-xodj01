@@ -63,10 +63,15 @@ public class FizzBuzzSolutionTest {
 		 assertThat(solution.fizzBuzz(563), equalTo("fizz buzz"));		
 	}
 	
+	@Test
 	public void testAllDigitsTheSameOverTen(){
-		 assertThat(solution.fizzBuzz(222), equalTo("deluxe"));		
-		
+		 assertThat(solution.fizzBuzz(222), equalTo("deluxe"));
+	}
+	@Test
+	public void testFizzBuzzDeluxe(){
+		 assertThat(solution.fizzBuzz(), equalTo("deluxe"));		
 	}
 }
+
 
 

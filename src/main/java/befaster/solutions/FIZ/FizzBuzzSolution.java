@@ -8,8 +8,12 @@ public class FizzBuzzSolution {
 
     	String value = ""+ number;//return this no conditions meet
     	String intialValue = value;
+    	
+    	boolean isDeluxe = false;
     	boolean isFizz  = false;
     	boolean isBuzz = false;
+    	
+    	//test delux first
     	
     	
     	if(intialValue.contains("3")){
@@ -27,12 +31,15 @@ public class FizzBuzzSolution {
     		isBuzz = true;
     	}
     	  	
-    	if(isFizz && isBuzz){
+    	if(isFizz && isBuzz && !isDeluxe){
     		value= "fizz buzz";
     	}
-    	
+    	if(isFizz && isBuzz && isDeluxe){
+    		value = "fizz buzz deluxe";
+    	}
     	return value;
     }
 
 }
+
 
