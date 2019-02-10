@@ -28,6 +28,7 @@ public class FizzBuzzSolution {
     	}else{
     		isDeluxe= false;
     	}
+    	
     	if(intialValue.contains("3")){
     		value = "fizz";
     		isFizz = true;
@@ -55,3 +56,4 @@ public class FizzBuzzSolution {
     }
 
 }
+
