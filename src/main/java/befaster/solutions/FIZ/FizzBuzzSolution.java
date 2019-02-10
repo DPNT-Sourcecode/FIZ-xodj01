@@ -8,8 +8,7 @@ public class FizzBuzzSolution {
 
     	String value = ""+ number;//return this no conditions meet
     	String intialValue = value;
-    	
-    	
+    	  	
     	boolean isDeluxe = true;
     	boolean isFizz  = false;
     	boolean isBuzz = false;
@@ -41,26 +40,31 @@ public class FizzBuzzSolution {
     		isBuzz = true;
     	} 	
     	
+    	String finalValue = "";
+
     	if(isFizz){
     		value = "fizz";
     	}
-    	if(isBuzz){
-    		if(isFizz) 
-    			value+=" ";    				
-     		value+="buzz";
+    	if(isFizz && isBuzz) {
+    			value=" buzz";   
+    	}else if(isBuzz){
+    			value="buzz";
+    		}
      	}
-    	 if(isDeluxe){
-     		if(isFizz || isBuzz) 
+    	if(isDeluxe){
+     		if(isFizz || isBuzz) {
     			value+=" ";
+     		}
     		value+="deluxe";
     	}
-    	if(value!=""){
+    	if(value != initialValue){
     		return value;
     	}
     	return intialValue;
     }
 
 }
+
 
 
 
