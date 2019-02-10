@@ -24,7 +24,6 @@ public class FizzBuzzSolutionTest {
 	 //could potentially do this with an input file of multiple values divisible..
 	 assertThat(solution.fizzBuzz(9), equalTo("fizz"));
 	}
-	
 	@Test
 	public void testBuzz(){
 		 assertThat(solution.fizzBuzz(5), equalTo("buzz"));
@@ -42,7 +41,24 @@ public class FizzBuzzSolutionTest {
 	public void testNoFizzNoBuzz(){
 		 assertThat(solution.fizzBuzz(2), equalTo(2));	
 	}
+	@Test
+	public void testHasFizzNumberInIt(){
+		 assertThat(solution.fizzBuzz(23), equalTo("fizz"));	
+	}
+	@Test
+	public void testHasTwoFizzNumberInIt(){
+		 assertThat(solution.fizzBuzz(33), equalTo("fizz"));	
+	}
+	@Test
+	public void testHasBuzzNumberInIt(){
+		 assertThat(solution.fizzBuzz(52), equalTo("buzz"));	
+	}
+	@Test
+	public void testHasTwoBuzzNumberInIt(){
+		 assertThat(solution.fizzBuzz(55), equalTo("buzz"));	
+	}
 }
+
 
 
 
