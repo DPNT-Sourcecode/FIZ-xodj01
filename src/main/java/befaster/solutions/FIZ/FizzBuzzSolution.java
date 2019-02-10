@@ -14,7 +14,17 @@ public class FizzBuzzSolution {
     	boolean isBuzz = false;
     	
     	//test delux first
-    	
+
+    	char[] split = value.toCharArray();
+    	if(split.length >0){
+    		char previous;
+        	for(int i=0; i <split.length; i++){
+        		if(i!=0){
+        			
+        		}
+        		previous = split[i];
+        	}
+    	}
     	
     	if(intialValue.contains("3")){
     		value = "fizz";
@@ -41,5 +51,6 @@ public class FizzBuzzSolution {
     }
 
 }
+
 
 
