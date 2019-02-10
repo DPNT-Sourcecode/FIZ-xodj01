@@ -19,4 +19,10 @@ public class SumSolutionTest {
     public void compute_sum() {
         assertThat(sum.compute(1, 1), equalTo(2));
     }
+    
+    @Test(expected = InvalidNumberException.class)
+    public void testInvalidNumber(){
+    	sum.compute(-1, 0);
+    }
 }
+
