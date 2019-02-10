@@ -17,6 +17,3 @@ public class HelloSolution {
 		return "Hello, i do not know your name.";    
 	}
 }
-
-
-
