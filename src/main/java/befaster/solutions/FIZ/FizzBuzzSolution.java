@@ -38,26 +38,27 @@ public class FizzBuzzSolution {
     		isBuzz = true;
     	}else if(number % 5==0){
     		isBuzz = true;
-    	} 	
+    	} 	   	
+    	
+    	//lets create teh string based on the booleans
     	
     	String finalValue = "";
-
     	if(isFizz){
     		finalValue = "fizz";
-    		if(isBuzz || isDeluxe) {
+    		if(isBuzz || isDeluxe) { //append the space
         		finalValue+=" ";   
         	}
     	}    	
     	if(isBuzz){
     		finalValue += "buzz";
     		if(isDeluxe) {
-        		finalValue+=" ";   
+        		finalValue+=" ";  //append the space
         	}
     	}      	
     	if(isDeluxe){
-    		value+="deluxe";
+    		finalValue+="deluxe";
     	}
-    	
+    
     	if(finalValue != intialValue){
     		return finalValue;
     	}
@@ -65,6 +66,7 @@ public class FizzBuzzSolution {
     }
 
 }
+
 
 
 
