@@ -27,7 +27,7 @@ public class FizzBuzzSolution {
         	}
     	}else{
     		isDeluxe= false;
-    	}
+     	}
     	
     	if(intialValue.contains("3")){	
     		isFizz = true;
@@ -40,8 +40,7 @@ public class FizzBuzzSolution {
     		isBuzz = true;
     	} 	   	
     	
-    	//lets create teh string based on the booleans
-    	
+    	//lets create the string based on the booleans
     	String finalValue = "";
     	if(isFizz){
     		finalValue = "fizz";
@@ -56,7 +55,7 @@ public class FizzBuzzSolution {
         	}
     	}      	
     	if(isDeluxe){
-    		finalValue+="deluxe";
+    		finalValue += "deluxe";
     	}
     
     	if(finalValue != intialValue){
@@ -66,6 +65,7 @@ public class FizzBuzzSolution {
     }
 
 }
+
 
 
 
