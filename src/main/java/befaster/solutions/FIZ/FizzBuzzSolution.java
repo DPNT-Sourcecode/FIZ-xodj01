@@ -56,7 +56,10 @@ public class FizzBuzzSolution {
         	}
     	}      	
     	if(isDeluxe){
+    		//if its even do not append anything
     		if(number %2==0){
+    			//do nothing
+    		}else{
     			finalValue +="fake ";
     		}
     		finalValue += "deluxe";
@@ -69,4 +72,5 @@ public class FizzBuzzSolution {
     }
 
 }
+
 

@@ -64,25 +64,20 @@ public class FizzBuzzSolutionTest {
 	}
 	
 	@Test
-	public void testAllDigitsTheSameOverTen(){
-		 assertThat(solution.fizzBuzz(22), equalTo("deluxe"));
+	public void testAllDigitsTheSameOverTenEven(){
+		 assertThat(solution.fizzBuzz(22), equalTo("fake deluxe"));
 	}
 	@Test
 	public void testDeluxe(){
-		 assertThat(solution.fizzBuzz(11), equalTo("deluxe"));		
+		 assertThat(solution.fizzBuzz(11), equalTo("fake deluxe"));		
 	}
 	@Test
 	public void testFizzDeluxeTwo(){
 		 assertThat(solution.fizzBuzz(222), equalTo("fizz deluxe"));		
 	}
 	@Test
-	public void testFizzDeluxeSeven(){
-		 assertThat(solution.fizzBuzz(777), equalTo("fizz deluxe"));		
-	}
-
-	@Test
 	public void testDeluxeSeven(){
-		 assertThat(solution.fizzBuzz(777), equalTo("fizz deluxe"));		
+		 assertThat(solution.fizzBuzz(777), equalTo("fizz fake deluxe"));		
 	}
 
 	@Test
@@ -94,4 +89,5 @@ public class FizzBuzzSolutionTest {
 		 assertThat(solution.fizzBuzz(11), equalTo("fake deluxe"));	
 	}
 }
+
 
