@@ -3,6 +3,7 @@ package befaster;
 import befaster.solutions.CHK.CheckoutSolution;
 import befaster.solutions.FIZ.FizzBuzzSolution;
 import befaster.solutions.HLO.HelloSolution;
+import befaster.solutions.SUM.InvalidNumberException;
 import befaster.solutions.SUM.SumSolution;
 
 import static befaster.runner.TypeConversion.asInt;
@@ -30,7 +31,7 @@ public class EntryPointMapping {
         checkoutSolution = new CheckoutSolution();
     }
 
-    public Object sum(String ... p) {
+    public Object sum(String ... p) throws InvalidNumberException {//modify entry point not expected
         return sumSolution.compute(asInt(p[0]), asInt(p[1]));
     }
 
@@ -46,3 +47,4 @@ public class EntryPointMapping {
         return checkoutSolution.checkout(p[0]);
     }
 }
+

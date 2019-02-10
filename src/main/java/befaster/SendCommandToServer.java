@@ -2,6 +2,7 @@ package befaster;
 
 import befaster.runner.ConfigNotFoundException;
 import befaster.runner.UserInputAction;
+import befaster.solutions.SUM.InvalidNumberException;
 import tdl.client.queue.QueueBasedImplementationRunner;
 import tdl.client.runner.ChallengeSession;
 
@@ -52,9 +53,18 @@ public class SendCommandToServer {
     public static void main(String[] args) throws ConfigNotFoundException {
         EntryPointMapping entry = new EntryPointMapping();
 
+        ///potentially breaks the implementation runner, will need to test!
         QueueBasedImplementationRunner runner = new QueueBasedImplementationRunner.Builder()
                 .setConfig(getRunnerConfig())
-                .withSolutionFor("sum", entry::sum)
+                .withSolutionFor("sum", arg0 -> {
+					try {
+						return entry.sum(arg0);
+					} catch (InvalidNumberException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+					return arg0;
+				})
                 .withSolutionFor("hello", entry::hello)
                 .withSolutionFor("fizz_buzz", entry::fizzBuzz)
                 .withSolutionFor("checkout", entry::checkout)
@@ -67,3 +77,4 @@ public class SendCommandToServer {
     }
 
 }
+
